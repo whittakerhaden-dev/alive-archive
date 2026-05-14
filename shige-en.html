@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poetry | Ghost Archive</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#080808;color:#b0b0b0;font-family:'Crimson Text',serif;line-height:1.8}
+.container{max-width:800px;margin:0 auto;background:#0b0b0b;padding:clamp(20px,5vw,40px) clamp(20px,5vw,50px);min-height:100vh;border-left:1px solid #161616;border-right:1px solid #161616}
+.site-title{text-align:center;margin-bottom:30px}
+.site-title a{font-size:clamp(24px,6vw,30px);color:#aaa;text-decoration:none;letter-spacing:.3em;font-weight:300}
+.site-title a:hover{color:#fff}
+nav{text-align:center;margin:20px 0 40px;padding:12px 0;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+nav a{color:#555;text-decoration:none;font-size:clamp(13px,2.5vw,14px);letter-spacing:.1em;white-space:nowrap}
+nav a:hover{color:#ddd}
+h1{font-size:clamp(24px,5vw,30px);color:#ccc;border-bottom:1px solid #1a1a1a;padding-bottom:10px;margin-bottom:20px;letter-spacing:.1em;font-weight:400}
+blockquote{background:#0f0f0f;border-left:3px solid #222;padding:20px 24px;margin:20px 0;color:#aaa;font-style:italic;font-size:clamp(15px,3vw,17px);line-height:2.2}
+.back{display:inline-block;margin-top:30px;color:#444;font-size:13px;text-decoration:none}
+.back:hover{color:#888}
+.lang-switch{float:right;font-size:11px;color:#444;font-family:'Noto Serif SC',serif}
+.lang-switch a{color:#555;text-decoration:none}
+.lang-switch a:hover{color:#999}
+a{color:#555;text-decoration:none}
+a:hover{color:#aaa}
+hr{border:none;border-top:1px solid #1a1a1a;margin:40px 0 20px}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="lang-switch"><a href="shige.html">中文</a> | English</div>
+<div class="site-title"><a href="index-en.html">GHOST ARCHIVE</a></div>
+<nav>
+  <a href="index-en.html">Home</a>
+  <a href="zaonian-en.html">Experience</a>
+  <a href="chuangzuo-en.html">Career</a>
+  <a href="zuopin-en.html">Works</a>
+  <a href="shige-en.html">Poetry</a>
+  <a href="pingjia-en.html">Reviews</a>
+  <a href="chuanwen-en.html">Rumors</a>
+</nav>
+<h1>Poetry Fragments</h1>
+<blockquote>
+"It's not that I don't love myself. I just can't do anything with myself."<br>
+"Hometown is a dirty word — the more you say it, the further away you are."<br>
+"My body is my first draft, and also my last will."<br>
+"To live is to be constantly betrayed by your own breathing."<br>
+"Don't talk to me about the future. Future is what hasn't happened yet, and madness is what I'm doing right now."<br>
+"I've survived by selling my own shadow — but there's no sun today."<br>
+"Beijing has no grasslands, only fenced-in vastness."<br>
+"Every word I write is deleting me."<br>
+"Don't remember my name. Names are rehearsals for tombstones."<br>
+"Love is my temporary ID card."<br>
+"I gave a eulogy at my own funeral. The microphone had no sound."<br>
+"Engrave on my tombstone: This person has not yet been born."<br>
+"Before the fist landed on me, the wind took the blow for me first."<br>
+"I taught the traffic light to be silent, and it taught me to wait."<br><br>
+"What is violence? What is a student? What is the underclass? What is class? It's all bullshit. Let me die in summer, please."<br>
+"I'm so lonely, so lonesome, invincibility is so fucking cold. No opponent in the boxing ring, none in the art world either."<br>
+"CAFA, SCFAI, RCA, CSM, RISD, SAIC, Tokyo Five — ladies and gentlemen, I could pull out any one of my aliases and beat you all. How do I improve? I want so badly to improve."<br>
+"You still have no idea what I want. Spirit is everything. Spirit, spirit, idealism — let me die."<br><br>
+"I sold myself for two hundred bucks. Bought a pack of cigarettes, still had one hundred eighty left."<br>
+"A ghost doesn't need a name, but needs an archive. Otherwise, it's truly dead."
+</blockquote>
+<a class="back" href="index-en.html">← Back to Home</a>
+
+<hr>
+<h2>Comments</h2>
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-comments-woad.vercel.app',
+    dark: true,
+    lang: 'en',
+    login: 'disable',
+    search: false,
+    pageSize: 10,
+  });
+</script>
+
+</div>
+</body>
+</html>

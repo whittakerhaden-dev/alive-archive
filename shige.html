@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>诗歌 | 幽灵档案</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#080808;color:#b0b0b0;font-family:'Noto Serif SC',serif;line-height:1.8}
+.container{max-width:800px;margin:0 auto;background:#0b0b0b;padding:clamp(20px,5vw,40px) clamp(20px,5vw,50px);min-height:100vh;border-left:1px solid #161616;border-right:1px solid #161616}
+.site-title{text-align:center;margin-bottom:30px}
+.site-title a{font-size:clamp(24px,6vw,30px);color:#aaa;text-decoration:none;letter-spacing:.3em;font-weight:300}
+.site-title a:hover{color:#fff}
+nav{text-align:center;margin:20px 0 40px;padding:12px 0;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+nav a{color:#555;text-decoration:none;font-size:clamp(13px,2.5vw,14px);letter-spacing:.1em;white-space:nowrap}
+nav a:hover{color:#ddd}
+h1{font-size:clamp(24px,5vw,30px);color:#ccc;border-bottom:1px solid #1a1a1a;padding-bottom:10px;margin-bottom:20px;letter-spacing:.1em;font-weight:400}
+blockquote{background:#0f0f0f;border-left:3px solid #222;padding:20px 24px;margin:20px 0;color:#aaa;font-style:italic;font-size:clamp(15px,3vw,17px);line-height:2.2}
+.back{display:inline-block;margin-top:30px;color:#444;font-size:13px;text-decoration:none}
+.back:hover{color:#888}
+.lang-switch{float:right;font-size:11px;color:#444}
+.lang-switch a{color:#555;text-decoration:none}
+.lang-switch a:hover{color:#999}
+a{color:#555;text-decoration:none}
+a:hover{color:#aaa}
+hr{border:none;border-top:1px solid #1a1a1a;margin:40px 0 20px}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="lang-switch">中文 | <a href="shige-en.html">English</a></div>
+<div class="site-title"><a href="index.html">幽灵档案</a></div>
+<nav>
+  <a href="index.html">首页</a>
+  <a href="zaonian.html">经历</a>
+  <a href="chuangzuo.html">创作</a>
+  <a href="zuopin.html">作品</a>
+  <a href="shige.html">诗歌</a>
+  <a href="pingjia.html">评价</a>
+  <a href="chuanwen.html">传闻</a>
+</nav>
+<h1>诗歌片段</h1>
+<blockquote>
+"我并不是不爱我自己，我只是拿自己没办法。"<br>
+"故乡是一句脏话，说得越多，离得越远。"<br>
+"身体是我的第一份草稿，也是最后一份遗书。"<br>
+"活着就是不断被自己的呼吸背叛。"<br>
+"别跟我谈未来，未来的未是未曾发生的未，发疯的疯是我正在做的事。"<br>
+"我靠贩卖自己的影子活到了今天——可今天没太阳。"<br>
+"北京没有草原，只有被圈养的辽阔。"<br>
+"我写的每一个字都在删除我。"<br>
+"不要记住我的名字，名字是墓碑的预演。"<br>
+"爱是我的临时身份证。"<br>
+"我在自己的葬礼上致辞，麦克风没有声音。"<br>
+"请在我的墓碑上刻：此人尚未出生。"<br>
+"拳头落在我身上之前，是风先替我承了那一击。"<br>
+"我教红绿灯沉默，它却教我等待。"<br><br>
+"暴力算什么？学生算什么？底层算什么？阶级算什么？都鸡巴扯淡的。让我死在夏天吧，求你了。"<br>
+"我好孤独，好寂寞，无敌真他妈冷。拳击台上没对手，艺术圈里也没有。"<br>
+"央美川美，皇艺伦艺，罗德岛芝加哥，东京五美——诸位，我随便拎出一个艺名就够你们打的。我该怎么进步呢？我好想进步。"<br>
+"你们到现在也不知道我想要的是什么。精神才是一切，精神呐，精神呐，理想主义啊，让我死吧。"<br><br>
+"我把我自己卖了，卖了二百块。买了一包烟，还剩一百八。"<br>
+"幽灵不需要名字，但需要档案。不然就真的死了。"
+</blockquote>
+<a class="back" href="index.html">← 返回首页</a>
+
+<hr>
+<h2>留言</h2>
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+  init({
+    el: '#waline',
+    serverURL: 'https://waline-comments-woad.vercel.app',
+    dark: true,
+    lang: 'zh-CN',
+    login: 'disable',
+    search: false,
+    pageSize: 10,
+  });
+</script>
+
+</div>
+</body>
+</html>

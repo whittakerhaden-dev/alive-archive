@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>幽灵档案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#050505;color:#888;font-family:'Noto Serif SC',serif;display:flex;align-items:center;justify-content:center;min-height:100vh;overflow-x:hidden}
+.void{text-align:center;padding:20px;width:100%;max-width:600px}
+.ghost{font-size:clamp(40px,10vw,60px);animation:float 3s ease-in-out infinite;color:#1a1a1a;user-select:none;display:inline-block}
+.ghost span{display:inline-block;animation:breathe 3s infinite}
+.ghost span:nth-child(2){animation-delay:.4s}
+.ghost span:nth-child(3){animation-delay:.8s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes breathe{0%,100%{opacity:.2}50%{opacity:.6}}
+.title{margin:20px 0 5px}
+.title a{font-size:clamp(32px,8vw,52px);color:#aaa;text-decoration:none;letter-spacing:.3em;font-weight:300;transition:.3s}
+.title a:hover{color:#fff;text-shadow:0 0 20px #333}
+.sub{font-size:clamp(11px,2vw,14px);letter-spacing:.5em;color:#333;margin-bottom:30px;font-family:'Crimson Text',serif}
+nav{margin:30px 0;border-top:1px solid #161616;border-bottom:1px solid #161616;padding:15px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+nav a{color:#555;text-decoration:none;font-size:clamp(14px,2.5vw,16px);letter-spacing:.1em;transition:.2s;white-space:nowrap}
+nav a:hover{color:#ddd}
+.whisper{margin-top:40px;font-size:11px;color:#222;letter-spacing:.2em;font-family:'Crimson Text',serif}
+.lang-switch{position:fixed;top:15px;right:15px;font-size:11px;color:#333;z-index:10}
+.lang-switch a{color:#444;text-decoration:none}
+.lang-switch a:hover{color:#888}
+.line{width:1px;height:40px;background:#1a1a1a;margin:20px auto}
+</style>
+</head>
+<body>
+<div class="lang-switch">中文 | <a href="index-en.html">English</a></div>
+<div class="void">
+  <div class="ghost"><span>◐</span> <span>~</span> <span>◑</span></div>
+  <div class="title"><a href="index.html">幽灵档案</a></div>
+  <div class="sub">G H O S T &nbsp; A R C H I V E</div>
+  <nav>
+    <a href="zaonian.html">经 历</a>
+    <a href="chuangzuo.html">创 作</a>
+    <a href="zuopin.html">作 品</a>
+    <a href="shige.html">诗 歌</a>
+    <a href="pingjia.html">评 价</a>
+    <a href="chuanwen.html">传 闻</a>
+  </nav>
+  <div class="line"></div>
+  <div class="whisper">档案持续更新 · 部分信息待考</div>
+</div>
+</body>
+</html>
