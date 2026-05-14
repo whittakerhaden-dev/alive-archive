@@ -67,19 +67,20 @@ hr{border:none;border-top:1px solid #1a1a1a;margin:40px 0 20px}
 
 <hr>
 <h2>Comments</h2>
-<div id="waline"></div>
-<script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-  init({
-    el: '#waline',
-    serverURL: 'https://waline-comments-v2.vercel.app',
-    dark: true,
-    lang: 'en',
-    login: 'disable',
-    search: false,
-    pageSize: 10,
-  });
+<!-- Livere Anonymous Comments -->
+<div id="lv-container" data-id="city" data-uid="e5yr1NkAouYwe0QfQXkJ">
+<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+       if (typeof LivereTower === 'function') { return; }
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
 </script>
+<noscript>Please enable JavaScript to view the comments.</noscript>
+</div>
 
 </div>
 </body>
