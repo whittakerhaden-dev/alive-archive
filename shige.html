@@ -26,22 +26,16 @@ a{color:#555;text-decoration:none}
 a:hover{color:#aaa}
 hr{border:none;border-top:1px solid #1a1a1a;margin:40px 0 20px}
 
-/* 强制暗黑覆盖 Livere */
-#lv-container { background: transparent !important; border: none !important; }
-.livere-chat, .livere-reply, .livere-message, .livere-item, .livere-header, .livere-footer {
-  background: #0b0b0b !important;
-  color: #aaa !important;
-  border-color: #1a1a1a !important;
-}
-.livere-input textarea, .livere-input input {
-  background: #0f0f0f !important;
-  color: #ccc !important;
-  border-color: #222 !important;
-}
-.livere-btn {
-  background: #1a1a1a !important;
-  color: #999 !important;
-  border: 1px solid #333 !important;
+/* 暗黑覆盖新版 Livere 组件 */
+livere-comment {
+  --lv-bg: #0b0b0b;
+  --lv-text: #aaa;
+  --lv-border: #1a1a1a;
+  display: block;
+  background: #0b0b0b;
+  color: #aaa;
+  padding: 10px;
+  border-radius: 4px;
 }
 </style>
 </head>
@@ -85,19 +79,9 @@ hr{border:none;border-top:1px solid #1a1a1a;margin:40px 0 20px}
 
 <hr>
 <h2>留言</h2>
-<div id="lv-container" data-id="city" data-uid="e5yr1NkAouYwe0QfQXkJ">
-<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-       if (typeof LivereTower === 'function') { return; }
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-</script>
+<livere-comment client-id="e5yr1NkAouYwe0QfQXkJ"></livere-comment>
+<script type="module" src="https://www.livere.org/livere-widget.js"></script>
 <noscript>请启用 JavaScript 查看评论。</noscript>
-</div>
 
 </div>
 </body>
